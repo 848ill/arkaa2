@@ -1,0 +1,42 @@
+{
+  "train_size": 1250,
+  "test_size": 221,
+  "forecast_horizon": 5,
+  "sudden_events_filtered": 12,
+  "forecast_method": "expanding_window_periodic_refit",
+  "refit_interval": 20,
+  "models": {
+    "discharge_temp": {
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "AIC": 6429.513545817784,
+      "BIC": 6450.037141138969
+    },
+    "discharge_pressure": {
+      "order": [
+        3,
+        0,
+        3
+      ],
+      "AIC": 3457.4391762531977,
+      "BIC": 3498.4863668955686
+    },
+    "jacket_water": {
+      "order": [
+        2,
+        0,
+        1
+      ],
+      "AIC": 2674.0983009493552,
+      "BIC": 2699.752795100837
+    }
+  },
+  "naive_mae": {
+    "discharge_temp": 2.9876388888888887,
+    "discharge_pressure": 0.8261574074074076,
+    "jacket_water": 0.552824074074074
+  }
+}

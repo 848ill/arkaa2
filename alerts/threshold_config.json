@@ -1,0 +1,27 @@
+{
+  "discharge_temp": {
+    "OFF": 90,
+    "NORMAL": [
+      110,
+      150
+    ],
+    "WARNING": 150,
+    "CRITICAL": 300
+  },
+  "discharge_pressure": {
+    "NORMAL": [
+      10,
+      30
+    ],
+    "LOW": 10,
+    "HIGH": 30
+  },
+  "jacket_water": {
+    "NORMAL": [
+      12,
+      20
+    ],
+    "LOW": 12,
+    "HIGH": 20
+  }
+}

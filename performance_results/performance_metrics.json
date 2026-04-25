@@ -1,0 +1,130 @@
+{
+  "forecast_accuracy": {
+    "discharge_temp": {
+      "MAE_1day": 4.4112,
+      "MAE_5day": 4.5024,
+      "RMSE_1day": 7.2041,
+      "RMSE_5day": 7.0021,
+      "MAPE_1day": 2.99,
+      "MAPE_5day": 3.05,
+      "MASE_1day": 1.476,
+      "MASE_5day": 1.507,
+      "naive_mae": 2.9876,
+      "n_forecasts": 217
+    },
+    "discharge_pressure": {
+      "MAE_1day": 0.7323,
+      "MAE_5day": 0.7696,
+      "RMSE_1day": 0.9617,
+      "RMSE_5day": 1.0105,
+      "MAPE_1day": 3.34,
+      "MAPE_5day": 3.5,
+      "MASE_1day": 0.886,
+      "MASE_5day": 0.932,
+      "naive_mae": 0.8262,
+      "n_forecasts": 217
+    },
+    "jacket_water": {
+      "MAE_1day": 0.8807,
+      "MAE_5day": 0.8304,
+      "RMSE_1day": 1.4215,
+      "RMSE_5day": 1.2834,
+      "MAPE_1day": 6.12,
+      "MAPE_5day": 5.81,
+      "MASE_1day": 1.593,
+      "MASE_5day": 1.502,
+      "naive_mae": 0.5528,
+      "n_forecasts": 217
+    }
+  },
+  "classification": {
+    "confusion_matrix": {
+      "OFF": {
+        "OFF": 0,
+        "GREEN": 0,
+        "YELLOW": 0,
+        "RED": 0
+      },
+      "GREEN": {
+        "OFF": 0,
+        "GREEN": 170,
+        "YELLOW": 24,
+        "RED": 6
+      },
+      "YELLOW": {
+        "OFF": 0,
+        "GREEN": 17,
+        "YELLOW": 0,
+        "RED": 0
+      },
+      "RED": {
+        "OFF": 0,
+        "GREEN": 0,
+        "YELLOW": 0,
+        "RED": 0
+      }
+    },
+    "class_metrics": {
+      "OFF": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 0,
+        "support": 0,
+        "predicted": 0
+      },
+      "GREEN": {
+        "precision": 85.0,
+        "recall": 90.9,
+        "f1": 87.9,
+        "tp": 170,
+        "fp": 30,
+        "fn": 17,
+        "support": 187,
+        "predicted": 200
+      },
+      "YELLOW": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 17,
+        "fn": 24,
+        "support": 24,
+        "predicted": 17
+      },
+      "RED": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 6,
+        "support": 6,
+        "predicted": 0
+      }
+    },
+    "accuracy": 78.3,
+    "n_total": 217
+  },
+  "lead_time": {
+    "target_class": "RED",
+    "n_events": 1,
+    "n_detected": 0,
+    "n_missed": 1
+  },
+  "targets": {
+    "MAE_temp": 6.0,
+    "MAE_pressure": 1.5,
+    "MAE_jacket": 0.8,
+    "RMSE_temp": 8.0,
+    "RMSE_pressure": 2.0,
+    "RMSE_jacket": 1.0,
+    "MAPE_1day": 10.0,
+    "MAPE_5day": 15.0,
+    "MASE": 1.0,
+    "Lead_Time_Avg": 3.0
+  }
+}
